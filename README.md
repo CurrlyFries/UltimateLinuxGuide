@@ -22,7 +22,7 @@ for the sake on concistency, I will be doing all generic linux things with the c
 
 # Contents
 ## [General](#General)
-## [Video](#Video)
+## [Video](##Video)
 ## [Audio](#Audio)
 ## [Gaming](#Gaming)
 ## [Peripherals](#Peripherals)
