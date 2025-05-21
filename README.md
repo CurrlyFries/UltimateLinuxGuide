@@ -9,7 +9,7 @@ This guide will aim to make solving these issues easier for everyone else who ma
 
 I will keep updating it with solutions as I find them, as I remember them, or if somebody ask for a solution to something (My discord is CurrlyFries_ and I fix linux things for fun so feel free to ask is you have a problem :) )
 
-# IMPORTANT
+## IMPORTANT
 
 In linux, the tidle(~) key is shorthand for your home directory, /home/(user)/
 
