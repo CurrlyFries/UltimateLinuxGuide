@@ -39,6 +39,56 @@ It is recommended to just reformat the drive, but if you are dual booting with w
 
 (https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows)
 
+## 2. Python versions
+
+For some reason, the version of python that comes with ubuntu doesn't work all that well.
+
+It comes from the fact that pip (or pipx) has changed and doesn't work, now if you want to install something with pip, you are meant to create a virtual python environment, and even then I've never got it to work.
+
+This also includes dependencies, which is where I believe most of my issues come from (mainly just python scripts not running at all)
+
+### <ins>The Solution</ins>
+
+The solution to this is a tool called [pyenv](https://github.com/pyenv/pyenv), which lets you change python verions.
+
+- To install pyenv, you can run the automatic installer with `curl -fsSL https://pyenv.run | bash`
+
+- Then run `pyenv install -l` to see a list of versions
+
+-  To install a version use `pyenv install (version)`
+   (I've been mainly using 3.8.0)
+
+-  To set a global python version use `pyenv global (version)`
+
+-  If you want to check your global pyenv version, use `pyenv global`
+
+But then I ran into another problem.
+
+I was installing the [thcrap](https://github.com/major-gnuisance/thcrap-linux-ez) touhou translation mod and it wasn't working.
+
+Naturally, this was it uses the version of python that the system uses, so you have to use multiple python versions.
+
+You can also do this with pyenv.
+
+  - move into the directory where you want to change with `cd (directory)`
+
+  - then run `pyenv local (version)`
+
+The problem with this is that you have to be in the directory with the python script, or it will use the global version. For example (using [bcml](https://github.com/NiceneNerd/BCML)):
+
+ ```
+ cd bcml
+ python3 bcml.py
+ ```
+ Will work, but
+ `python3 ~/bcml/bcml.py`
+ won't
+
+This is mainly a problem if you have a desktop file which runs a python script, which I do for convenience.
+
+To circumvent this, instead of setting `exec=(~/bcml/bcml.py)` in your desktop file, use `exec=bash -c 'cd (bcml) && python3 bcml.py`
+
+  
 # Video
   tbd
 # Audio
