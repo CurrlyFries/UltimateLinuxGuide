@@ -10,8 +10,13 @@ This guide will aim to make solving these issues easier for everyone else who ma
 # Contents
 Tbd
 
-#General
-#Video
-#Audio
-#Gaming
-#Peripherals
+# General
+  tbd
+# Video
+  tbd
+# Audio
+  tbd
+# Gaming
+  tbd
+# Peripherals
+  tbd
