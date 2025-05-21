@@ -25,7 +25,11 @@ for the sake on concistency, I will be doing all generic linux things with the c
 ## [Peripherals](#Peripherals)
 
 # General
-  tbd
+
+## 1. Using an NTFS drive to play steam games.
+
+This is more of a gaming problem but it changes how your drive will be mounted so I thought it'd be more of a general thing.
+
 # Video
   tbd
 # Audio
