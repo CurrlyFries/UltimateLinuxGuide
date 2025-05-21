@@ -1,5 +1,5 @@
 # Ultimate Linux Guide
-A guide I'm making to solve problems I have had setting up linux for Gaming and productivity
+### A guide I'm making to solve problems I have had setting up linux for Gaming and productivity
 
 Welcome to the guide :)
 
