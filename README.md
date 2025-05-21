@@ -9,6 +9,9 @@ This guide will aim to make solving these issues easier for everyone else who ma
 
 I will keep updating it with solutions as I find them, as I remember them, or if somebody ask for a solution to something (My discord is CurrlyFries_ and I fix linux things for fun so feel free to ask is you have a problem :) )
 
+MOST OF THESE FIXES WERE FOUND BY SOMEBODY ELSE, I AM JUST COMPILING THEM INTO A BIG FILE TO BE EASY.
+I will credit everyone if I can.
+
 ## IMPORTANT
 
 I have exclusively been using use ubuntu, which means I will be downloading packages with `apt`. If you are on an arch-based distro, you will have to use different package managers such as `pacman`. If you need to know the command to install a package, I recommend just googling "Install (package name) (your distro)"
@@ -29,6 +32,12 @@ for the sake on concistency, I will be doing all generic linux things with the c
 ## 1. Using an NTFS drive to play steam games.
 
 This is more of a gaming problem but it changes how your drive will be mounted so I thought it'd be more of a general thing.
+
+This applies if you are switching from windows, and you either want to share a drive across a dual boot or just dont want to reinstall games.
+
+It is recommended to just reformat the drive, but if you are dual booting with windows or really just don't want to, then follow the guide linked below:
+
+(https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows)
 
 # Video
   tbd
