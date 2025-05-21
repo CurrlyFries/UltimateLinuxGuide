@@ -24,14 +24,20 @@ This guide also assumes that you are using bash, idk if people use other shells 
 
 # Contents
 [General](#General)<br>
+
+- [Using an ntfs drive with steam](#Using-an-NTFS-drive-to-play-steam-games)<br>
+- [Using Multiple python versions](#Multiple-Python-versions)<br>
+  
 [Video](#Video)<br>
 [Audio](#Audio)<br>
 [Gaming](#Gaming)<br>
 [Peripherals](#Peripherals)<br>
 
+- [Audio interface shows up as surround sound even though it is stereo](#My-audio-interface-shows-up-as-surround-sound-even-though-it-is-stereo)
+
 # General
 
-## 1. Using an NTFS drive to play steam games.
+## Using an NTFS drive to play steam games.
 
 This is more of a gaming problem but it changes how your drive will be mounted so I thought it'd be more of a general thing.
 
@@ -41,7 +47,7 @@ It is recommended to just reformat the drive, but if you are dual booting with w
 
 (https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows)
 
-## 2. Python versions
+## Multiple Python versions
 
 For some reason, the version of python that comes with ubuntu doesn't work all that well.
 
@@ -109,7 +115,7 @@ To circumvent this, instead of setting `exec=(~/bcml/bcml.py)` in your desktop f
   tbd
 # Peripherals
 
-## 1. My audio interface shows up as surround sound even though it is stereo
+## Audio interface shows up as surround sound even though it is stereo
 
 Out of all the problems I've had, this was the biggest pain in the ass.
 
