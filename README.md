@@ -33,7 +33,7 @@ This guide also assumes that you are using bash, idk if people use other shells 
 [Gaming](#Gaming)<br>
 [Peripherals](#Peripherals)<br>
 
-- [Audio interface shows up as surround sound even though it is stereo](#My-audio-interface-shows-up-as-surround-sound-even-though-it-is-stereo)
+- [Audio interface shows up as surround sound even though it is stereo](#Audio-interface-shows-up-as-surround-sound-even-though-it-is-stereo)
 
 # General
 
