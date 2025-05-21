@@ -9,7 +9,7 @@ This guide will aim to make solving these issues easier for everyone else who ma
 
 I will keep updating it with solutions as I find them, as I remember them, or if somebody ask for a solution to something (My discord is CurrlyFries_ and I fix linux things for fun so feel free to ask is you have a problem :) )
 
-MOST OF THESE FIXES WERE FOUND BY SOMEBODY ELSE, I AM JUST COMPILING THEM INTO A BIG FILE TO BE EASY.
+MOST OF THESE FIXES WERE FOUND BY SOMEBODY ELSE, I AM JUST COMPILING THEM INTO A BIG FILE TO BE EASY.<br>
 I will credit everyone if I can.
 
 ## IMPORTANT
@@ -21,11 +21,11 @@ In linux, the tidle(~) key is shorthand for your home directory, /home/(user)/
 for the sake on concistency, I will be doing all generic linux things with the command line (e.g. I will not use the files app to make files, i will use `mkdir`)
 
 # Contents
-[General](#General)
-[Video](#Video)
-[Audio](#Audio)
-[Gaming](#Gaming)
-[Peripherals](#Peripherals)
+[General](#General)<br>
+[Video](#Video)<br>
+[Audio](#Audio)<br>
+[Gaming](#Gaming)<br>
+[Peripherals](#Peripherals)<br>
 
 # General
 
