@@ -33,3 +33,7 @@ Out of all the problems I've had, this was the biggest pain in the ass.
 Say that your playing spider-man miles morales. This problem would make it so you couldnt hear anything that wasn't infront of you, which also includes the calls you get throughout the game. On windows, you can just go into settings and set your audio interface to stereo, but on linux It's not that easy
 
 ### <ins>The solution</ins>
+
+(credit to reddit.com/user/khiron)
+
+  Create the file ... ~/.config/wireplumber/wireplumber.conf.d/(your audio interface name, doesn't really matter).conf ...
