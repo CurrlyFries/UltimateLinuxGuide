@@ -21,11 +21,11 @@ In linux, the tidle(~) key is shorthand for your home directory, /home/(user)/
 for the sake on concistency, I will be doing all generic linux things with the command line (e.g. I will not use the files app to make files, i will use `mkdir`)
 
 # Contents
-## [General](#General)
-## [Video](##Video)
-## [Audio](#Audio)
-## [Gaming](#Gaming)
-## [Peripherals](#Peripherals)
+[General](#General)
+[Video](#Video)
+[Audio](#Audio)
+[Gaming](#Gaming)
+[Peripherals](#Peripherals)
 
 # General
 
