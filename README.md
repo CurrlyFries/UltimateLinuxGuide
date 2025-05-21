@@ -20,6 +20,8 @@ In linux, the tidle(~) key is shorthand for your home directory, /home/(user)/
 
 for the sake on concistency, I will be doing all generic linux things with the command line (e.g. I will not use the files app to make files, i will use `mkdir`)
 
+This guide also assumes that you are using bash, idk if people use other shells but this is all bash
+
 # Contents
 [General](#General)<br>
 [Video](#Video)<br>
@@ -62,11 +64,16 @@ The solution to this is a tool called [pyenv](https://github.com/pyenv/pyenv), w
 
 -  If you want to check your global pyenv version, use `pyenv global`
 
+<br>
+
 But then I ran into another problem.
+
+<br>
+
 
 I was installing the [thcrap](https://github.com/major-gnuisance/thcrap-linux-ez) touhou translation mod and it wasn't working.
 
-Naturally, this was it uses the version of python that the system uses, so you have to use multiple python versions.
+Naturally, this was becuase it uses the version of python that the system uses, so you have to use multiple python versions.
 
 You can also do this with pyenv.
 
@@ -74,19 +81,24 @@ You can also do this with pyenv.
 
   - then run `pyenv local (version)`
 
-The problem with this is that you have to be in the directory with the python script, or it will use the global version. For example (using [bcml](https://github.com/NiceneNerd/BCML)):
+The problem with this is that you have to be in the directory with the python script, or it will use the global version.<br>
+For example (using [bcml](https://github.com/NiceneNerd/BCML)):
 
  ```
- cd bcml
+ cd ~/bcml
  python3 bcml.py
  ```
  Will work, but
- `python3 ~/bcml/bcml.py`
- won't
+ ```
+ python3 ~/bcml/bcml.py
+ ```
+ Will not work
+
+<br>
 
 This is mainly a problem if you have a desktop file which runs a python script, which I do for convenience.
 
-To circumvent this, instead of setting `exec=(~/bcml/bcml.py)` in your desktop file, use `exec=bash -c 'cd (bcml) && python3 bcml.py`
+To circumvent this, instead of setting `exec=(~/bcml/bcml.py)` in your desktop file, use `exec=bash -c 'cd ~/bcml && python3 bcml.py`
 
   
 # Video
