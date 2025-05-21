@@ -11,7 +11,11 @@ I will keep updating it with solutions as I find them, as I remember them, or if
 
 ## IMPORTANT
 
+I have exclusively been using use ubuntu, which means I will be downloading packages with `apt`. If you are on an arch-based distro, you will have to use different package managers such as `pacman`. If you need to know the command to install a package, I recommend just googling "Install (package name) (your distro)"
+
 In linux, the tidle(~) key is shorthand for your home directory, /home/(user)/
+
+for the sake on concistency, I will be doing all generic linux things with the command line (e.g. I will not use the files app to make files, i will use `mkdir`)
 
 # Contents
 ## [General](#General)
@@ -38,6 +42,47 @@ Say that your playing spider-man miles morales. This problem would make it so yo
 
 ### <ins>The solution</ins>
 
+I believe this will need alsa, pipewire, pulse and wireplumber
+
 (credit to reddit.com/user/khiron)
 
-  Create the file `~/.config/wireplumber/wireplumber.conf.d/(your audio interface name, doesn't really matter).conf`
+  - Create the folder `~/.config/wireplumber/wireplumber.conf.d/` if it does not already exist with `mkdir ~/.config/wireplumber/wireplumber.conf.d)` You may need to make `~/.config/wireplumber` first.
+
+  - Create a .conf file with the name of your audio interface in that folder with touch (I don't think the name of this file actually matters but it'll make it memorable), for example `touch ~/.config/wiremplumber/wireplumber.d/Focusrite.conf`
+
+  - Use `wpctl status` to get the sink ID of your audio interface (For example my scarlett 18i8 gen 1 shows up as ` Audio/Sink alsa_output.usb-Focusrite_Scarlett_18i8_USB_1000112B-00.analog-surround-71`) make a note of it (or just leave the terminal window open to copy from)
+  
+  - Open the .conf file we made earlier and copy the following into it:
+
+    ```
+    monitor.alsa.rules = [
+	{
+		matches = [
+    			{
+    				node.name = "(Audio Interface ID)"
+    			}
+    		]
+    		actions = {
+    			update-props = {
+    				node.description = "(Audio interface name) Stereo"
+    				node.nick = "Main"						
+    				api.alsa.use-acp = true
+    				audio.channels = 2
+    				audio.position = "FL, FR"
+    			}
+    		}
+	    }
+    ]
+    
+    ```
+
+    Replace `(Audio interface ID)` with the one we got earlier. The audio interface name is just for you to remember it by.
+
+  - Reboot
+
+To check if it worked, open sytem settings and test the audio. There should only be 2 directions - Front left and front right
+
+
+    
+
+  
