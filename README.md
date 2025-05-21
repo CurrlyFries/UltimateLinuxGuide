@@ -36,4 +36,4 @@ Say that your playing spider-man miles morales. This problem would make it so yo
 
 (credit to reddit.com/user/khiron)
 
-  Create the file ... ~/.config/wireplumber/wireplumber.conf.d/(your audio interface name, doesn't really matter).conf ...
+  Create the file `~/.config/wireplumber/wireplumber.conf.d/(your audio interface name, doesn't really matter).conf`
