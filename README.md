@@ -1,3 +1,6 @@
+#NOTE: Since making this guide, I have made the switch to arch & hyprland, and have not added more to this because of that. I may revisit it one day, but for now consider this on hold
+
+
 # Ultimate Linux Guide
 ### A guide I'm making to solve problems I have had setting up linux for Gaming and productivity
 
